@@ -32,23 +32,17 @@ const EcosystemSection = () => {
                 wordBreak={"break-word"}
                 whiteSpace={"break-spaces"}
               >
-                An AI-supported interface enables a company to create ERP
-                (Enterprise Resource Planning) contracts. ERP is a software that
-                allows a company to manage all its business activities,
-                transaction processes, and resources under a single system. The
-                AI-supported interface allows users to specify contract details
-                in a few steps, and the system automatically generates a
-                contract based on this information. For example, a company can
-                use the interface to create supplier contracts, production
-                contracts, or sales contracts. This makes the contract creation
-                process faster and more efficient, resulting in time and cost
-                savings for companies.
+                In today's e-commerce systems, the number of bot accounts and
+                fake reviews by malicious individuals is quite high. However,
+                with the help of AI-powered contract creation services, it is
+                possible to significantly reduce these problems. During the
+                contract creation process, the system can automatically perform
+                necessary identity verifications and prevent fake accounts from
+                creating contracts. Additionally, with AI-powered contracts, it
+                becomes easier for businesses to ensure that the reviews they
+                receive are genuine and trustworthy. This provides consumers
+                with a safer shopping experience.
               </Text>
-              <Accordion heading={"asdas"} description={"sadas"} />
-              <Accordion heading={"asdas"} description={"sadas"} />
-              <Accordion heading={"asdas"} description={"sadas"} />
-              <Accordion heading={"asdas"} description={"sadas"} />
-              <Accordion heading={"asdas"} description={"sadas"} />
             </Box>
           </Flex>
           <Flex flexBasis={"100%"} justifyContent={"center"}>
