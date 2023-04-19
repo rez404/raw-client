@@ -8,6 +8,7 @@ import Head from "next/head";
 import EcosystemSection from "@/components/EcosystemSection";
 import EcosystemSectionTwo from "@/components/EcosystemSectionTwo";
 import Roadmap from "@/components/Roadmap";
+import Divider from "@/components/Divider";
 
 export default function Home() {
   return (
@@ -19,16 +20,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Header /> 
-        <HeroSection />
-        <AboutSection/>
-        <Problems/>
-        <EcosystemSection/>
-        <EcosystemSectionTwo/>
-      
-        <Roadmap/>
-        <TeamSection />
-        <Footer />
+      <Header />
+      <HeroSection />
+      <AboutSection />
+      <Divider />
+      <Problems />
+      <Divider />
+      <EcosystemSection />
+      <EcosystemSectionTwo />
+
+      <Roadmap />
+      <TeamSection />
+      <Footer />
     </>
   );
 }
