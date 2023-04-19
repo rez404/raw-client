@@ -24,7 +24,7 @@ const EcosystemSection = () => {
             <Box>
               <Subheading
                 header={"Enterprise Resource Planning"}
-                subheader={"erp contract creation"}
+                subheader={"erp"}
               />
               <Text
                 opacity={"0.8"}
@@ -44,28 +44,11 @@ const EcosystemSection = () => {
                 process faster and more efficient, resulting in time and cost
                 savings for companies.
               </Text>
-              <Accordion
-                heading={"How can I integrate ERP systems with blockchain?"}
-                description={
-                  "ERP systems can be integrated with blockchain typically through APIs (Application Programming Interfaces) or smart contracts."
-                }
-              />
-              <Accordion
-                heading={
-                  "What are the advantages of integrating ERP systems with blockchain?"
-                }
-                description={
-                  " Integrating ERP systems with blockchain can provide benefits such as data security, transparency, automation, reliability, and traceability."
-                }
-              />
-              <Accordion
-                heading={
-                  "How can the integration of ERP systems with blockchain impact business processes?"
-                }
-                description={
-                  "The integration of ERP systems with blockchain can automate business processes, enhance data accuracy, secure data sharing, and make business processes more transparent."
-                }
-              />
+              <Accordion heading={"asdas"} description={"sadas"} />
+              <Accordion heading={"asdas"} description={"sadas"} />
+              <Accordion heading={"asdas"} description={"sadas"} />
+              <Accordion heading={"asdas"} description={"sadas"} />
+              <Accordion heading={"asdas"} description={"sadas"} />
             </Box>
           </Flex>
           <Flex flexBasis={"100%"} justifyContent={"center"}>
