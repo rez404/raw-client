@@ -36,7 +36,7 @@ const GradientHeading = ({ header, subheader }) => {
           textTransform={"uppercase"}
           letterSpacing={"10px"}
           marginBottom={"1rem"}
-          zIndex={"30"}
+          zIndex={"-1"}
           textShadow={"0 0 10px #fff"}
         >
           {subheader}
@@ -48,7 +48,7 @@ const GradientHeading = ({ header, subheader }) => {
           fontWeight={"600"}
           textTransform={"capitalize"}
           letterSpacing={".5px"}
-          zIndex={"30"}
+          zIndex={"-1"}
           wordBreak={"break-word"}
           whiteSpace={"pre-wrap"}
           maxW={"100vw"}
