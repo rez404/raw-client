@@ -27,49 +27,49 @@ import Link from "next/link";
 import { IoMenuOutline } from "react-icons/io5";
 const Header = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
-  const menuContext = ["English", "French", "Spanish", "Koray"];
   const menuContent = [
     {
-      label: "English",
-      value: "English",
+      label: "About",
+      value: "About",
       href: "/",
     },
     {
-      label: "English",
-      value: "English",
+      label: "Problems",
+      value: "Problems",
       href: "/",
     },
     {
-      label: "English",
-      value: "English",
+      label: "Solutions",
+      value: "Solutions",
       href: "/",
     },
     {
-      label: "English",
-      value: "English",
+      label: "Roadmap",
+      value: "Roadmap",
+      href: "/",
+    },
+    {
+      label: "Team",
+      value: "Team",
       href: "/",
     },
   ];
   return (
     <div>
       <Flex
-          sx={
-            {
-              backdropFilter: "blur(16px)",
-          }}
+        sx={{
+          backdropFilter: "blur(16px)",
+        }}
         position={"fixed"}
         boxShadow="xl"
         height={"60px"}
         borderBottom={"1px solid"}
-        borderColor={
-           "whiteAlpha.200"
-        }
+        borderColor={"whiteAlpha.200"}
         alignItems={"center"}
         top={0}
         justifyContent={"space-between"}
         width={"100%"}
         zIndex={"10"}
-        
       >
         <Flex marginX={"4"}>
           <Image src="/vercel.svg" alt="logo" width={100} height={100} />
@@ -83,38 +83,43 @@ const Header = () => {
             ))}
           </Flex>
         )}
-        <Flex marginX={"4"} alignItems={"center"}
-        gap={"2"}
-        
-        >
-          <Button>Whitepaper</Button>  <Button leftIcon={<Icon as={FaTelegram} />} variant={"solid"} colorScheme="primary">Community</Button>
+        <Flex marginX={"4"} alignItems={"center"} gap={"2"}>
+          <Button>Whitepaper</Button>{" "}
+          <Button
+            leftIcon={<Icon as={FaTelegram} />}
+            variant={"solid"}
+            colorScheme="primary"
+          >
+            Community
+          </Button>
           {/* <IconButton
             onClick={toggleColorMode}
             aria-label="Search database"
             icon={ <FaSun />}
           /> */}
           {isMobile && (
-          <Popover isLazy>
-          <PopoverTrigger>
-           <IconButton icon={<IoMenuOutline/>} />
-          </PopoverTrigger>
-          <PopoverContent
-          bg={"blackAlpha.800"}
-          border={"1px solid"}
-          borderColor= {"whiteAlpha.300"}
-             maxWidth= "200px"
-
->
-            <PopoverHeader fontWeight='semibold'>Menu</PopoverHeader>
-            <PopoverArrow />
-            <PopoverCloseButton />
-            <PopoverBody>
-              <VStack alignItems={"left"}>
-                {menuContent.map((item) => (
-<Text key={item.label}>ASDAS</Text>   )    )}       </VStack> 
-            </PopoverBody>
-          </PopoverContent>
-        </Popover>
+            <Popover isLazy>
+              <PopoverTrigger>
+                <IconButton icon={<IoMenuOutline />} />
+              </PopoverTrigger>
+              <PopoverContent
+                bg={"blackAlpha.800"}
+                border={"1px solid"}
+                borderColor={"whiteAlpha.300"}
+                maxWidth="200px"
+              >
+                <PopoverHeader fontWeight="semibold">Menu</PopoverHeader>
+                <PopoverArrow />
+                <PopoverCloseButton />
+                <PopoverBody>
+                  <VStack alignItems={"left"}>
+                    {menuContent.map((item) => (
+                      <Text key={item.label}>ASDAS</Text>
+                    ))}{" "}
+                  </VStack>
+                </PopoverBody>
+              </PopoverContent>
+            </Popover>
           )}
         </Flex>
       </Flex>
