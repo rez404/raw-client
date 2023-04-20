@@ -3,7 +3,7 @@ import React from "react";
 import Subheading from "../Headings/Subheading";
 import Accordion from "../Accordion";
 import Aurora from "../Aurora";
-import Contract from "@/images/ecosystem-contract.png";
+import Commerce from "@/images/ecosystem-commerce.png";
 
 const EcosystemSectionTwo = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
@@ -48,7 +48,7 @@ const EcosystemSectionTwo = () => {
             </Box>
           </Flex>
           <Flex flexBasis={"100%"} justifyContent={"center"}>
-            <Image alt="" src={Contract.src} maxW={"500px"} />
+            <Image alt="" src={Commerce.src} maxW={"500px"} />
           </Flex>
         </Flex>
       </Box>
