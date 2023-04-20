@@ -20,41 +20,41 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "@/images/rawblock.svg";
+import { Link as AnimationLink, animateScroll as scroll } from "react-scroll";
 
 import { Button, MenuItem, Select } from "@saas-ui/react";
 import { FaMoon, FaSun, FaTelegram } from "react-icons/fa";
 import Link from "next/link";
 import { IoMenuOutline } from "react-icons/io5";
-import { useMotionValue, useScroll } from "framer-motion";
+
 const Header = () => {
   const headerRef = useRef(null);
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
-  const menuContext = ["English", "French", "Spanish", "Koray"];
   const menuContent = [
     {
       label: "About",
       value: "About",
-      href: "#about",
+      href: "about",
     },
     {
       label: "Problems",
       value: "Problems",
-      href: "#problems",
+      href: "problems",
     },
     {
       label: "Solutions",
       value: "Solutions",
-      href: "#solutions",
+      href: "solutions",
     },
     {
       label: "Roadmap",
       value: "Roadmap",
-      href: "#roadmap",
+      href: "roadmap",
     },
     {
       label: "Team",
       value: "Team",
-      href: "#team",
+      href: "team",
     },
   ];
   const [pos, setPos] = useState("top");
@@ -96,9 +96,14 @@ const Header = () => {
         {!isMobile && (
           <Flex justifyContent={"center"} alignItems={"center"} gap={"20px"}>
             {menuContent.map((item) => (
-              <Link href={item.href} key={item.label}>
+              <AnimationLink
+                to={item.href}
+                key={item.label}
+                smooth
+                style={{ cursor: "pointer" }}
+              >
                 <Text>{item.value}</Text>
-              </Link>
+              </AnimationLink>
             ))}
           </Flex>
         )}

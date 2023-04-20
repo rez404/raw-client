@@ -17,7 +17,7 @@ import common from "@/images/common-problems.png";
 const FeaturesSection = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
   return (
-    <Box maxW={"1100px"} position={"relative"} margin="0 auto">
+    <Box id="problems" maxW={"1100px"} position={"relative"} margin="0 auto">
       <Flex justifyContent={"center"} width={"100%"}>
         <GradientHeading
           subheader={"Problems"}
@@ -27,7 +27,6 @@ const FeaturesSection = () => {
       <Flex mt={10} mb={10}>
         {/* Container */}
         <Flex direction={isMobile ? "column" : "row"} w="100%">
-         
           <Box flexBasis="25%" p={1}>
             <Box
               minHeight={"38rem"}
@@ -57,9 +56,9 @@ const FeaturesSection = () => {
               </Text>
             </Box>
           </Box>
-      
+
           <Box flexBasis="25%" p={1}>
-          <Box
+            <Box
               minHeight={"38rem"}
               bg={"gray.700"}
               sx={{
@@ -85,9 +84,9 @@ const FeaturesSection = () => {
               </Text>
             </Box>
           </Box>
-        
+
           <Box flexBasis="25%" p={1}>
-          <Box
+            <Box
               minHeight={"38rem"}
               bg={"gray.700"}
               sx={{
@@ -113,9 +112,9 @@ const FeaturesSection = () => {
               </Text>
             </Box>
           </Box>
-       
+
           <Box flexBasis="25%" p={1}>
-          <Box
+            <Box
               minHeight={"38rem"}
               bg={"gray.700"}
               sx={{
