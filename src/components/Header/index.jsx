@@ -19,7 +19,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
-import logo from "@/images/vercel.svg";
+import logo from "@/images/rawblock.svg";
 
 import { Button, MenuItem, Select } from "@saas-ui/react";
 import { FaMoon, FaSun, FaTelegram } from "react-icons/fa";
@@ -90,7 +90,7 @@ const Header = () => {
         zIndex={"10"}
       >
         <Flex marginX={"4"}>
-          <Image src="/vercel.svg" alt="logo" width={100} height={100} />
+          <Image src="/rawblock.svg" alt="logo" width={200} height={100} />
         </Flex>
 
         {!isMobile && (
