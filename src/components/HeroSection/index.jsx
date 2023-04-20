@@ -129,7 +129,7 @@ const HeroSection = () => {
                       onClick={() => fakePromiseResolver()}
                     >
                       {isLoading ? (
-                        <IoCheckmarkDoneOutline color="#33ffaa" />
+                        <IoCheckmarkDoneOutline color="#c29aff" />
                       ) : (
                         <IoCopyOutline />
                       )}
