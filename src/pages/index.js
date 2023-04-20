@@ -50,6 +50,7 @@ export default function Home() {
       <Problems />
       <Divider />
       <EcosystemHead />
+      <EcosystemCommerce />
       <EcosystemSection />
       <EcosystemSectionTwo />
       <EcosystemThree />
