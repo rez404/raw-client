@@ -129,22 +129,6 @@ const Roadmap = () => {
                     </Flex>
                   ))}
                 </CardBody>
-                <Box
-                  position={"absolute"}
-                  bottom={100 - i * 50 + "px"}
-                  width={500 - i * 100 + "px"}
-                  height={"100px"}
-                  right={-200 + i * 100 + "px"}
-                  zIndex={"-1"}
-                >
-                  <Image
-                    opacity={0.2}
-                    src={radialSvg.src}
-                    width={200}
-                    height={200}
-                    alt="radial"
-                  />
-                </Box>
               </Card>
             ))}
           </Flex>

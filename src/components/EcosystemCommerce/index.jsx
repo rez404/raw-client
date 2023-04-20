@@ -48,7 +48,7 @@ const EcosystemSectionTwo = () => {
             </Box>
           </Flex>
           <Flex flexBasis={"100%"} justifyContent={"center"}>
-            <Image src={Contract.src} maxW={"500px"} />
+            <Image alt="" src={Contract.src} maxW={"500px"} />
           </Flex>
         </Flex>
       </Box>
