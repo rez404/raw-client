@@ -12,6 +12,7 @@ import Roadmap from "@/components/Roadmap";
 import Divider from "@/components/Divider";
 import EcosystemHead from "@/components/EcosystemHead";
 import EcosystemCommerce from "@/components/EcosystemCommerce";
+import CTASection from "@/components/CTASection";
 
 export default function Home() {
   return (
@@ -25,24 +26,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
       <HeroSection />
       <AboutSection />
       <Divider />
       <Problems />
       <Divider />
-
       <EcosystemHead />
-      <EcosystemCommerce />
       <EcosystemSection />
       <EcosystemSectionTwo />
       <EcosystemThree />
-
       <Divider />
       <Roadmap />
       <Divider />
       <TeamSection />
+      <CTASection />
       <Footer />
     </>
   );
