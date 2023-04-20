@@ -31,7 +31,7 @@ const TeamSection = () => {
   ];
 
   return (
-    <Box py={12} maxW={"1200px"} mx={"auto"}>
+    <Box id="team" py={12} maxW={"1200px"} mx={"auto"}>
       <Flex justifyContent={"center"} width={"100%"}>
         <GradientHeading
           subheader={"Team"}

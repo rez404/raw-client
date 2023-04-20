@@ -7,7 +7,7 @@ import webAppImg from "@/images/list.webp";
 const AboutSection = () => {
   return (
     <>
-      <Box maxW={"1100px"} position={"relative"} margin="0 auto">
+      <Box id="solutions" maxW={"1100px"} position={"relative"} margin="0 auto">
         {/* left */}
         <Box maxW={"100%"} position={"relative"} maxWidth={"100%"}>
           <Aurora

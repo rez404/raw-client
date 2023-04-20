@@ -74,7 +74,7 @@ const Roadmap = () => {
   ];
   return (
     <>
-      <Box width={"100%"}>
+      <Box id="roadmap" width={"100%"}>
         <Box maxW={"1100px"} mx={"auto"}>
           <Box>
             <Flex justifyContent={"center"} width={"100%"}>
