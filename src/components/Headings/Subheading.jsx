@@ -19,7 +19,7 @@ const Subheading = ({ header, subheader }) => {
           textTransform={"uppercase"}
           letterSpacing={"15px"}
           marginBottom={"0.375rem"}
-          zIndex={"30"}
+          zIndex={"-1"}
           textShadow={
             "2px -2px 20px hsl(263.54deg 69.89% 63.53% / 43%),-2px 2px 20px hsl(263.54deg 69.89% 63.53% / 43%),2px 2px 20px hsl(263.54deg 69.89% 63.53% / 43%),-2px -2px 20px hsl(263.54deg 69.89% 63.53% / 43%)"
           }
@@ -27,7 +27,7 @@ const Subheading = ({ header, subheader }) => {
             bg: "transparent",
           }}
         >
-        &nbsp;{subheader}
+          &nbsp;{subheader}
         </Text>
         <Text
           marginTop={"-1rem"}
@@ -35,7 +35,7 @@ const Subheading = ({ header, subheader }) => {
           fontWeight={"600"}
           textTransform={"uppercase"}
           letterSpacing={".5px"}
-          zIndex={"30"}
+          zIndex={"-1"}
           wordBreak={"break-word"}
           whiteSpace={"pre-wrap"}
           maxW={"100vw"}

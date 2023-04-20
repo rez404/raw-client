@@ -7,7 +7,7 @@ import webAppImg from "@/images/list.webp";
 const AboutSection = () => {
   return (
     <>
-      <Box maxW={"1100px"} position={"relative"} margin="0 auto">
+      <Box id="about" maxW={"1100px"} position={"relative"} margin="0 auto">
         {/* left */}
         <Flex justifyContent={"center"} width={"100%"}>
           <GradientHeading

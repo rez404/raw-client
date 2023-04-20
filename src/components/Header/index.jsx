@@ -34,27 +34,27 @@ const Header = () => {
     {
       label: "About",
       value: "About",
-      href: "/",
+      href: "#about",
     },
     {
       label: "Problems",
       value: "Problems",
-      href: "/",
+      href: "#problems",
     },
     {
       label: "Solutions",
       value: "Solutions",
-      href: "/",
+      href: "#solutions",
     },
     {
       label: "Roadmap",
       value: "Roadmap",
-      href: "/",
+      href: "#roadmap",
     },
     {
       label: "Team",
       value: "Team",
-      href: "/",
+      href: "#team",
     },
   ];
   const [pos, setPos] = useState("top");
