@@ -3,6 +3,7 @@ import React from "react";
 import Subheading from "../Headings/Subheading";
 import Accordion from "../Accordion";
 import Aurora from "../Aurora";
+import Social from "@/images/ecosystem-social.png";
 
 const EcosystemSection = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
@@ -10,9 +11,9 @@ const EcosystemSection = () => {
     <>
       <Box maxW={"1100px"} mx="auto" position={"relative"} my={"48"}>
         <Aurora
-          pos={{ left: "80%", top: "40%" }}
+          pos={{ left: "25%", top: "40%" }}
           size={{ width: "900px", height: "1000px" }}
-          color="hsl(190deg 78% 35% / 30%)"
+          color="hsl(257.54deg 55.89% 15.53%)"
         />
 
         <Flex
@@ -23,8 +24,8 @@ const EcosystemSection = () => {
           <Flex flexBasis={"100%"}>
             <Box>
               <Subheading
-                header={"Enterprise Resource Planning"}
-                subheader={"erp"}
+                header={"Reputation Management System"}
+                subheader={"Social Reviews"}
               />
               <Text
                 opacity={"0.8"}
@@ -46,7 +47,7 @@ const EcosystemSection = () => {
             </Box>
           </Flex>
           <Flex flexBasis={"100%"} justifyContent={"center"}>
-            <Image src={"https://sakaivault.io/512.png"} maxW={"500px"} />
+            <Image src={Social.src} maxW={"500px"} />
           </Flex>
         </Flex>
       </Box>

@@ -11,6 +11,7 @@ import EcosystemThree from "@/components/EcosystemThree";
 import Roadmap from "@/components/Roadmap";
 import Divider from "@/components/Divider";
 import EcosystemHead from "@/components/EcosystemHead";
+import EcosystemCommerce from "@/components/EcosystemCommerce";
 
 export default function Home() {
   return (
@@ -31,7 +32,9 @@ export default function Home() {
       <Divider />
       <Problems />
       <Divider />
+
       <EcosystemHead />
+      <EcosystemCommerce />
       <EcosystemSection />
       <EcosystemSectionTwo />
       <EcosystemThree />

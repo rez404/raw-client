@@ -9,10 +9,22 @@ const AboutSection = () => {
     <>
       <Box maxW={"1100px"} position={"relative"} margin="0 auto">
         {/* left */}
+        <Box maxW={"100%"} position={"relative"} maxWidth={"100%"}>
+          <Aurora
+            pos={{ left: "30%", top: "40%" }}
+            size={{ width: "200%", height: "300%" }}
+            color="hsl(180deg 78% 35% / 15%)"
+          />{" "}
+          <Aurora
+            pos={{ left: "70%", top: "60%" }}
+            size={{ width: "200%", height: "300%" }}
+            color="hsl(220deg 78% 35% / 15%)"
+          />
+        </Box>
         <Flex justifyContent={"center"} width={"100%"}>
           <GradientHeading
             subheader={"Ecosystem"}
-            header={"Rawblock's collaborative network"}
+            header={"RawBlock's Solutions"}
           />
         </Flex>
 
@@ -33,18 +45,6 @@ const AboutSection = () => {
           social interaction between the community within the system and the
           impact of reputation management on society.
         </Text>
-        <Box maxW={"100%"} position={"relative"} maxWidth={"100%"}>
-          <Aurora
-            pos={{ left: "30%", top: "40%" }}
-            size={{ width: "200%", height: "300%" }}
-            color="hsl(180deg 78% 35% / 15%)"
-          />{" "}
-          <Aurora
-            pos={{ left: "70%", top: "60%" }}
-            size={{ width: "200%", height: "300%" }}
-            color="hsl(220deg 78% 35% / 15%)"
-          />
-        </Box>
       </Box>
     </>
   );

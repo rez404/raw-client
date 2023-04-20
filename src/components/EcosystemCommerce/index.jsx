@@ -24,8 +24,8 @@ const EcosystemSectionTwo = () => {
           <Flex flexBasis={"100%"}>
             <Box>
               <Subheading
-                header={"Contract create with AI"}
-                subheader={"easy to create"}
+                header={"Build Web3 Commerce apps"}
+                subheader={"Web3 Store"}
               />
               <Text
                 opacity={"0.8"}
@@ -33,27 +33,18 @@ const EcosystemSectionTwo = () => {
                 wordBreak={"break-word"}
                 whiteSpace={"break-spaces"}
               >
-                An AI-powered system enables users to easily create contracts
-                through an interface. This system allows the user to specify
-                contract details in a few steps and automatically generates a
-                contract using this information. The user can determine the
-                content, duration, conditions, and other details of the
-                contract. AI uses this information to quickly and accurately
-                generate a contract and present it to the user, saving time and
-                cost and making the transaction process more efficient.
+                An AI-supported interface allows users to create contracts for
+                food orders, e-commerce, and other similar topics. Users can
+                determine the contract details in a few steps through the
+                interface, and the system automatically generates a contract
+                using this information. For example, in a food ordering
+                platform, you can use this interface to determine the contract
+                details for a restaurant. After determining the content, price,
+                payment methods, delivery time, and other details of the
+                contract, the AI-supported system quickly and accurately
+                generates a contract using this information. This enables users
+                to speed up the transaction process and save time and costs.
               </Text>
-              <Accordion
-                heading={"What is contract creation with AI?"}
-                description={
-                  "Contract creation with AI refers to the use of artificial intelligence technologies to automate the process of generating contracts or legal agreements."
-                }
-              />
-              <Accordion
-                heading={"How does AI create contracts?"}
-                description={
-                  "AI can create contracts by analyzing and interpreting data, templates, and predefined rules to generate contract language, clauses, and terms."
-                }
-              />
             </Box>
           </Flex>
           <Flex flexBasis={"100%"} justifyContent={"center"}>
