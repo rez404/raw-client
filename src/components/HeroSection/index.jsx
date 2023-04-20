@@ -32,11 +32,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <Box
-  
-     
-        position={"relative"}
-      >
+      <Box position={"relative"}>
         <Box
           marginTop={"4"}
           mx={"auto"}
@@ -125,8 +121,8 @@ const HeroSection = () => {
                   {" "}
                   <HStack margin={"0 2rem"}>
                     <Text as="kbd">
-                      npx create{" "}
-                      <span style={{ fontWeight: "600" }}>rawblocks</span>
+                      $RB Contract{" "}
+                      <span style={{ fontWeight: "600" }}>0x0000000</span>
                     </Text>
                     <IconButton
                       variant={"ghost"}
