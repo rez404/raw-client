@@ -38,7 +38,10 @@ export default function Home() {
       <EcosystemSection />
       <EcosystemSectionTwo />
       <EcosystemThree />
+
+      <Divider />
       <Roadmap />
+      <Divider />
       <TeamSection />
       <Footer />
     </>
