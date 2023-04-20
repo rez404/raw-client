@@ -33,16 +33,16 @@ const EcosystemSection = () => {
                 wordBreak={"break-word"}
                 whiteSpace={"break-spaces"}
               >
-                In today's e-commerce systems, the number of bot accounts and
-                fake reviews by malicious individuals is quite high. However,
-                with the help of AI-powered contract creation services, it is
-                possible to significantly reduce these problems. During the
-                contract creation process, the system can automatically perform
-                necessary identity verifications and prevent fake accounts from
-                creating contracts. Additionally, with AI-powered contracts, it
-                becomes easier for businesses to ensure that the reviews they
-                receive are genuine and trustworthy. This provides consumers
-                with a safer shopping experience.
+                In today&apos;s e-commerce systems, the number of bot accounts
+                and fake reviews by malicious individuals is quite high.
+                However, with the help of AI-powered contract creation services,
+                it is possible to significantly reduce these problems. During
+                the contract creation process, the system can automatically
+                perform necessary identity verifications and prevent fake
+                accounts from creating contracts. Additionally, with AI-powered
+                contracts, it becomes easier for businesses to ensure that the
+                reviews they receive are genuine and trustworthy. This provides
+                consumers with a safer shopping experience.
               </Text>
             </Box>
           </Flex>
