@@ -18,15 +18,18 @@ import {
   VStack,
   Icon,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "@/images/vercel.svg";
 
 import { Button, MenuItem, Select } from "@saas-ui/react";
 import { FaMoon, FaSun, FaTelegram } from "react-icons/fa";
 import Link from "next/link";
 import { IoMenuOutline } from "react-icons/io5";
+import { useMotionValue, useScroll } from "framer-motion";
 const Header = () => {
+  const headerRef = useRef(null);
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
+  const menuContext = ["English", "French", "Spanish", "Koray"];
   const menuContent = [
     {
       label: "About",
@@ -54,17 +57,32 @@ const Header = () => {
       href: "/",
     },
   ];
+  const [pos, setPos] = useState("top");
+  useEffect(() => {
+    addEventListener("scroll", (e) => {
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 20) {
+        setPos("moved");
+      } else {
+        setPos("top");
+      }
+    });
+  }, []);
   return (
     <div>
       <Flex
+        ref={headerRef}
         sx={{
           backdropFilter: "blur(16px)",
         }}
         position={"fixed"}
-        boxShadow="xl"
+        boxShadow={
+          pos === "moved" ? "0px 0px 10px 0px rgba(0,0,0,0.2)" : "none"
+        }
         height={"60px"}
-        borderBottom={"1px solid"}
-        borderColor={"whiteAlpha.200"}
+        borderBottom={pos === "moved" ? "1px solid" : "none"}
+        borderColor={pos === "moved" ? "whiteAlpha.200" : "none"}
+        bg={pos === "moved" ? "blackAlpha.800" : "none"}
         alignItems={"center"}
         top={0}
         justifyContent={"space-between"}
@@ -74,6 +92,7 @@ const Header = () => {
         <Flex marginX={"4"}>
           <Image src="/vercel.svg" alt="logo" width={100} height={100} />
         </Flex>
+
         {!isMobile && (
           <Flex justifyContent={"center"} alignItems={"center"} gap={"20px"}>
             {menuContent.map((item) => (

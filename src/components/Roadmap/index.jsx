@@ -1,9 +1,77 @@
-import { Box, Flex, Icon, Image } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import GradientHeading from "../Headings/GradientHeading";
 import radialSvg from "@/images/ellipse.svg";
-import { motion } from "framer-motion";
+
+import { Card, CardHeader, CardBody } from "@saas-ui/react";
+import { FaCheckDouble } from "react-icons/fa";
+import { IoCheckmarkDoneOutline, IoTime } from "react-icons/io5";
 const Roadmap = () => {
+  const roadmapArr = [
+    {
+      title: "Q1 2021",
+      done: true,
+      content: [
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: false,
+        },
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: false,
+        },
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+      ],
+    },
+    {
+      title: "Q1 2021",
+      done: true,
+      content: [
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+      ],
+    },
+    {
+      title: "Q1 2021",
+      done: false,
+      content: [
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+        {
+          title: "Launch",
+          content: "Launch of the project",
+          done: true,
+        },
+      ],
+    },
+  ];
   return (
     <>
       <Box width={"100%"}>
@@ -13,9 +81,72 @@ const Roadmap = () => {
               <GradientHeading header={"Roadmap"} subheader={"What's next?"} />
             </Flex>
           </Box>
-          <Flex justifyContent={"center"}>
-            <Flex flexBasis={"100%"}>1</Flex> <Flex flexBasis={"100%"}>1</Flex>
-            <Image src={radialSvg.src} />
+
+          <Flex flexBasis={"100%"} flexWrap={"wrap"}>
+            {roadmapArr.map((phases, i) => (
+              <Card
+                bg={"whiteAlpha.50"}
+                position={"relative"}
+                _hover={{
+                  boxShadow: "0px 0px 50px 5px #9461e360",
+                  zIndex: 1,
+                }}
+                key={i}
+                flexBasis={"300px"}
+                m={1}
+                flexGrow={1}
+                overflow={"hidden"}
+              >
+                <CardHeader
+                  bgGradient={
+                    phases.done
+                      ? "linear(to-r, primary.400, primary.900)"
+                      : "linear(to-r, whiteAlpha.200, whiteAlpha.400)"
+                  }
+                >
+                  {phases.title}
+                </CardHeader>
+                <CardBody minH={"400px"}>
+                  {phases.content.map((content, ii) => (
+                    <Flex
+                      key={ii}
+                      justifyContent={"space-between"}
+                      alignItems={"center"}
+                      width={"100%"}
+                      mb={2}
+                    >
+                      <Flex alignItems={"center"}>
+                        <Icon
+                          as={content.done ? IoCheckmarkDoneOutline : IoTime}
+                          mr={2}
+                          fontSize={"1rem"}
+                          color={
+                            content.done ? "primary.500" : "whiteAlpha.500"
+                          }
+                        />
+                        <Text fontSize={"xl"}>{content.content}</Text>
+                      </Flex>
+                    </Flex>
+                  ))}
+                </CardBody>
+                <Box
+                  position={"absolute"}
+                  bottom={100 - i * 50 + "px"}
+                  width={500 - i * 100 + "px"}
+                  height={"100px"}
+                  right={-200 + i * 100 + "px"}
+                  zIndex={"-1"}
+                >
+                  <Image
+                    opacity={0.2}
+                    src={radialSvg.src}
+                    width={200}
+                    height={200}
+                    alt="radial"
+                  />
+                </Box>
+              </Card>
+            ))}
           </Flex>
         </Box>
       </Box>
