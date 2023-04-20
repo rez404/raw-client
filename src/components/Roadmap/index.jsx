@@ -104,13 +104,21 @@ const Roadmap = () => {
                       : "linear(to-r, whiteAlpha.200, whiteAlpha.400)"
                   }
                 >
-                  {phases.title}
+                  <Flex justifyContent={"center"} width={"100%"}>
+                    <Text
+                      fontSize={"2xl"}
+                      fontWeight={"black"}
+                      textAlign={"center"}
+                    >
+                      {phases.title}
+                    </Text>
+                  </Flex>
                 </CardHeader>
                 <CardBody minH={"400px"}>
                   {phases.content.map((content, ii) => (
                     <Flex
                       key={ii}
-                      justifyContent={"space-between"}
+                      justifyContent={"center"}
                       alignItems={"center"}
                       width={"100%"}
                       mb={2}
@@ -129,6 +137,22 @@ const Roadmap = () => {
                     </Flex>
                   ))}
                 </CardBody>
+                <Box
+                  position={"absolute"}
+                  bottom={100 - i * 50 + "px"}
+                  width={500 - i * 100 + "px"}
+                  height={"100px"}
+                  right={-200 + i * 100 + "px"}
+                  zIndex={"-1"}
+                >
+                  <Image
+                    opacity={0.2}
+                    src={radialSvg.src}
+                    width={200}
+                    height={200}
+                    alt="radial"
+                  />
+                </Box>
               </Card>
             ))}
           </Flex>
