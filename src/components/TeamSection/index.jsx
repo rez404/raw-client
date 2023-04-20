@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import teamOne from "@/images/team/enver.jpg";
-import teamTwo from "@/images/team/gokhan.jpg";
-import teamThree from "@/images/team/engin.png";
+import teamTwo from "@/images/team/gokhan.jpeg";
+import teamThree from "@/images/team/engincan.jpg";
 import teamFour from "@/images/team/zafer.jpg";
 import GradientHeading from "../Headings/GradientHeading";
 
