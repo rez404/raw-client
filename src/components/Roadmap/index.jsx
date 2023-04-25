@@ -13,40 +13,19 @@ const Roadmap = () => {
       done: true,
       content: [
         {
-          title: "Launch",
-          content: "Launch of the project",
+          title: "Planning",
+          content: "Planning of the project",
           done: false,
         },
         {
           title: "Launch",
-          content: "Launch of the project",
+          content: "V1 meal/grocery system",
           done: false,
         },
         {
           title: "Launch",
-          content: "Launch of the project",
-          done: true,
-        },
-      ],
-    },
-    {
-      title: "Q1 2022",
-      done: true,
-      content: [
-        {
-          title: "Launch",
-          content: "Launch of the project",
-          done: true,
-        },
-        {
-          title: "Launch",
-          content: "Launch of the project",
-          done: true,
-        },
-        {
-          title: "Launch",
-          content: "Launch of the project",
-          done: true,
+          content: "V1 asset swap system",
+          done: false,
         },
       ],
     },
@@ -56,18 +35,55 @@ const Roadmap = () => {
       content: [
         {
           title: "Launch",
-          content: "Launch of the project",
-          done: true,
+          content: "V1 trade system launch",
+          done: false,
         },
         {
           title: "Launch",
-          content: "Launch of the project",
-          done: true,
+          content: "V2 meal/grocery system",
+          done: false,
         },
         {
           title: "Launch",
-          content: "Launch of the project",
-          done: true,
+          content: "V2 asset swap system",
+          done: false,
+        },
+      ],
+    },
+    {
+      title: "Q1 2022",
+      done: false,
+      content: [
+        {
+          title: "Launch",
+          content: "V2 trade system",
+          done: false,
+        },
+        {
+          title: "Launch",
+          content: "V3 asset swap system",
+          done: false,
+        },
+      ],
+    },
+    {
+      title: "Q1 2022",
+      done: false,
+      content: [
+        {
+          title: "Launch",
+          content: "V1 ERP system",
+          done: false,
+        },
+        {
+          title: "Launch",
+          content: "V1 Contract generation with natural language processing",
+          done: false,
+        },
+        {
+          title: "Launch",
+          content: "V4 Asset swap system",
+          done: false,
         },
       ],
     },
@@ -92,7 +108,7 @@ const Roadmap = () => {
                   zIndex: 1,
                 }}
                 key={i}
-                flexBasis={"300px"}
+                flexBasis={"200px"}
                 m={1}
                 flexGrow={1}
                 overflow={"hidden"}
@@ -104,12 +120,8 @@ const Roadmap = () => {
                       : "linear(to-r, whiteAlpha.200, whiteAlpha.400)"
                   }
                 >
-                  <Flex justifyContent={"center"} width={"100%"}>
-                    <Text
-                      fontSize={"2xl"}
-                      fontWeight={"black"}
-                      textAlign={"center"}
-                    >
+                  <Flex textAlign={"center"} width={"100%"}>
+                    <Text fontSize={"2xl"} fontWeight={"black"}>
                       {phases.title}
                     </Text>
                   </Flex>

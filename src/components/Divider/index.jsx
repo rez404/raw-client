@@ -14,7 +14,7 @@ const Divider = () => {
         opacity={0.8}
         width={"1100px"}
         zIndex={"10"}
-        marginTop={"15rem"}
+        marginTop={"2rem"}
       ></Box>
     </Flex>
   );

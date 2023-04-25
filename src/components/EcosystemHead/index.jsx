@@ -35,15 +35,11 @@ const AboutSection = () => {
           marginTop={"2rem"}
           opacity={"0.75"}
         >
-          Rawblock provides artificial intelligence-based contract creation
-          services for businesses in different sectors. Through AI, contracts
-          can be created through the interface in food/market and e-commerce
-          order platforms, greatly reducing fake reviews from bot accounts and
-          malicious individuals. Additionally, it offers the possibility of
-          AI-assisted contract creation for ERP systems. The interaction cycle
-          between products and the community is ensured, taking into account the
-          social interaction between the community within the system and the
-          impact of reputation management on society.
+          Rawblock Puzzle System provides decentralized infrastructure support
+          with the use of blockchain and IPFS technologies, along with
+          artificial intelligence assistance. This enables companies and
+          individuals to create their own platforms with customized contract
+          structures.
         </Text>
       </Box>
     </>

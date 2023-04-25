@@ -94,15 +94,15 @@ const Header = () => {
         </Flex>
 
         {!isMobile && (
-          <Flex justifyContent={"center"} alignItems={"center"} gap={"20px"}>
-            {menuContent.map((item) => (
+          <Flex justifyContent={"center"} alignItems={"center"} gap={"40px"}>
+            {menuContent.map((item, ii) => (
               <AnimationLink
                 to={item.href}
                 key={item.label}
                 smooth
                 style={{ cursor: "pointer" }}
               >
-                <Text>{item.value}</Text>
+                <Text fontWeight={500}> {ii + 1 + ". " + item.value}</Text>
               </AnimationLink>
             ))}
           </Flex>

@@ -7,7 +7,7 @@ const GradientHeading = ({ header, subheader }) => {
       <Box
         position={"relative"}
         alignItems={"center"}
-        margin={"4rem 0"}
+        marginBottom={"4rem"}
         display={"flex"}
         flexDirection={"column"}
       >

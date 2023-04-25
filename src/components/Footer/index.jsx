@@ -22,26 +22,26 @@ const Footer = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
   const footerColumns = [
     {
-      title: "About",
+      title: "Links",
       links: [
         {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          title: "Whitepaper",
+          desc: "Whitepaper is a document that describes the technology behind a project. ",
           href: "/",
         },
         {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          title: "E-Commerce",
+          desc: " Our E-Commerce platform is a decentralized marketplace that allows users to buy and sell goods and services. ",
           href: "/",
         },
         {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          title: "ERP",
+          desc: "ERP is a software that allows companies to manage their business processes. ",
           href: "/",
         },
         {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          title: "AI Contract Creator",
+          desc: "AI Contract Creator is a tool that allows users to create their own contracts. ",
           href: "/",
         },
       ],
@@ -110,9 +110,11 @@ const Footer = () => {
             <Image src={lightLogo.src} width={200} alt="logo" />{" "}
           </Box>
           <Text textAlign={"justify"} color="primary.300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            condimentum, nisl eget ultricies tincidunt, nisl nisl aliquam massa,
-            eget aliquam
+            Rawblock Puzzle System provides decentralized infrastructure support
+            with the use of blockchain and IPFS technologies, along with
+            artificial intelligence assistance. This enables companies and
+            individuals to create their own platforms with customized contract
+            structures.
           </Text>
           <HStack>
             <HStack>
@@ -160,7 +162,7 @@ const Footer = () => {
                   }}
                 >
                   <Text fontWeight={"bold"} fontSize={"lg"}>
-                    {link.title + ii}
+                    {ii + ". " + link.title}
                   </Text>
                   <Text opacity={0.6} fontSize={"sm"} maxW={"300px"}>
                     {link.desc}

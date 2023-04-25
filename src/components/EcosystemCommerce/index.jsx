@@ -33,17 +33,22 @@ const EcosystemSectionTwo = () => {
                 wordBreak={"break-word"}
                 whiteSpace={"break-spaces"}
               >
-                An AI-supported interface allows users to create contracts for
-                food orders, e-commerce, and other similar topics. Users can
-                determine the contract details in a few steps through the
-                interface, and the system automatically generates a contract
-                using this information. For example, in a food ordering
-                platform, you can use this interface to determine the contract
-                details for a restaurant. After determining the content, price,
-                payment methods, delivery time, and other details of the
-                contract, the AI-supported system quickly and accurately
-                generates a contract using this information. This enables users
-                to speed up the transaction process and save time and costs.
+                Thanks to its artificial intelligence-assisted smart contract
+                service for commerce, Rawblock Puzzle System enables supply and
+                demand sides to match with each other under the most favorable
+                conditions. The system allows the demand side to create
+                customized smart contracts that meet their specific needs. Thus,
+                Rawblock Puzzle System creates a fair trade infrastructure where
+                real prices are formed and parties do not exploit each other,
+                <Text
+                  textShadow={
+                    "2px -2px 20px hsl(263.54deg 69.89% 63.53% / 43%), -2px 2px 20px hsl(263.54deg 69.89% 63.53% / 43%), 2px 2px 20px hsl(263.54deg 69.89% 63.53% / 43%), -2px -2px 20px hsl(263.54deg 69.89% 63.53% / 43%)"
+                  }
+                  fontWeight={500}
+                >
+                  by utilizing asymmetric information distribution and auction
+                  theories.
+                </Text>
               </Text>
             </Box>
           </Flex>

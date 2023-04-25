@@ -33,17 +33,14 @@ const EcosystemSection = () => {
                 wordBreak={"break-word"}
                 whiteSpace={"break-spaces"}
               >
-                An AI-supported interface enables a company to create ERP
-                (Enterprise Resource Planning) contracts. ERP is a software that
-                allows a company to manage all its business activities,
-                transaction processes, and resources under a single system. The
-                AI-supported interface allows users to specify contract details
-                in a few steps, and the system automatically generates a
-                contract based on this information. For example, a company can
-                use the interface to create supplier contracts, production
-                contracts, or sales contracts. This makes the contract creation
-                process faster and more efficient, resulting in time and cost
-                savings for companies.
+                Our ERP system designed with Web3 technology allows you to
+                manage all your business processes on a single platform and
+                ensures inter-business synchronization. Our system, which
+                increases efficiency and provides time and cost savings, also
+                stands out with its user-friendly interface and security. If you
+                are looking for an ERP system that will support your business
+                growth, protect your data, and streamline your management
+                processes, you are in the right place!{" "}
               </Text>
               <Accordion
                 heading={"How can I integrate ERP systems with blockchain?"}

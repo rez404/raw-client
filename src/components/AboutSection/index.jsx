@@ -2,7 +2,7 @@ import React from "react";
 import GradientHeading from "../Headings/GradientHeading";
 import Aurora from "../Aurora";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import webAppImg from "@/images/list.webp";
+import webAppImg from "@/images/app-ui.png";
 
 const AboutSection = () => {
   return (

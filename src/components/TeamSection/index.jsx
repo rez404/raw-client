@@ -1,10 +1,14 @@
 import React from "react";
-import { Box, Flex, Text, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, HStack, Button, Icon } from "@chakra-ui/react";
 import teamOne from "@/images/team/enver-bg.jpg";
 import teamTwo from "@/images/team/gokhan-bg.jpg";
 import teamThree from "@/images/team/engincan-bg.jpg";
 import teamFour from "@/images/team/zafer-bg.jpg";
+import teamFive from "@/images/team/osman.jpg";
 import GradientHeading from "../Headings/GradientHeading";
+import { IoMailOutline } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const TeamSection = () => {
   const team = [
@@ -12,26 +16,41 @@ const TeamSection = () => {
       name: "Enver Yumrutaş",
       role: "CEO and Chief Scientist",
       image: teamOne.src,
+      username: "enveryumrutas",
+      linkedin: "https://www.linkedin.com/in/enveryumrutas/",
     },
     {
       name: "Gökhan Yener",
       role: "CTO and Head of Blockchain",
       image: teamTwo.src,
+      username: "gökhan-yener-08485787",
+      linkedin: "https://www.linkedin.com/in/gokhanyener/",
     },
     {
       name: "Engincan Kaya",
       role: "Head of Blockchain",
       image: teamThree.src,
+      username: "engincan-kaya-b626611a9",
+      linkedin: "https://www.linkedin.com/in/engincan-kaya-b626611a9/",
     },
     {
       name: "Zafer Beyiz",
       role: "CFO and Economist",
       image: teamFour.src,
+      username: "zafer-beyiz-2082b9247",
+      linkedin: "https://www.linkedin.com/in/zafer-beyiz-2082b9247/",
+    },
+    {
+      name: "Osman Yıldız",
+      role: "Machine Learning Specialist",
+      image: teamFive.src,
+      username: "drosmanyildiz",
+      linkedin: "https://www.linkedin.com/in/drosmanyildiz/",
     },
   ];
 
   return (
-    <Box id="team" py={12} maxW={"1200px"} mx={"auto"}>
+    <Box id="team" py={12} maxW={"1400px"} mx={"auto"}>
       <Flex justifyContent={"center"} width={"100%"}>
         <GradientHeading
           subheader={"Team"}
@@ -39,8 +58,8 @@ const TeamSection = () => {
         />
       </Flex>
       <Flex
-        mx={{ base: "0", md: "auto" }}
-        direction={{ base: "row", md: "row" }}
+        mx={{ base: "0", md: "0" }}
+        direction={{ base: "column", md: "row" }}
         flexWrap={"wrap"}
         justifyContent={"center"}
       >
@@ -49,8 +68,8 @@ const TeamSection = () => {
             margin={"0 1rem"}
             key={member.name}
             flexGrow={1}
-            flexBasis={{ base: "50%", xs: "50%", sm: "50%", md: "25%" }}
             textAlign="center"
+            marginBottom={{ base: "2rem", md: "0" }}
           >
             <Image
               src={member.image}
@@ -64,6 +83,16 @@ const TeamSection = () => {
               {member.name}
             </Text>
             <Text color="gray.500">{member.role}</Text>
+            <Flex justifyContent={"center"}>
+              <HStack align={"center"}>
+                <Button size={"lg"} leftIcon={<Icon as={FaLinkedin} />}>
+                  <Link href={member.linkedin} target="_blank">
+                    {" "}
+                    <Text>{"@" + member.username}</Text>
+                  </Link>
+                </Button>
+              </HStack>
+            </Flex>
           </Box>
         ))}
       </Flex>

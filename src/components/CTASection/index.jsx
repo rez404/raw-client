@@ -2,6 +2,7 @@ import { Box, Flex, HStack, Text } from "@chakra-ui/react";
 import { Button, Card, CardBody } from "@saas-ui/react";
 import React from "react";
 import Aurora from "../Aurora";
+import Link from "next/link";
 
 const CTASection = () => {
   return (
@@ -47,22 +48,19 @@ const CTASection = () => {
                     textAlign={"center"}
                     mb={5}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Join Us Now and Take Your Business to the Blockchain!
                   </Text>
-                  <Text
-                    fontSize={"xl"}
-                    fontWeight={"500"}
-                    textAlign={"center"}
-                    opacity={0.5}
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </Text>
+
                   <HStack justifyContent={"center"} mt={4}>
                     <Button size={"lg"} variant={"solid"} colorScheme="primary">
                       <Text fontSize={"2xl"}> Join Us!</Text>
                     </Button>
+
                     <Button size={"lg"} variant={"ghost"} colorScheme="primary">
-                      <Text fontSize={"2xl"}>Whitepaper</Text>
+                      <Link href={"mailto:info@rawblock.io"} key={""}>
+                        {" "}
+                        <Text fontSize={"2xl"}>E-Mail</Text>
+                      </Link>
                     </Button>
                   </HStack>
                 </Box>
