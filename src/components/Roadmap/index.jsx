@@ -9,7 +9,7 @@ import { IoCheckmarkDoneOutline, IoTime } from "react-icons/io5";
 const Roadmap = () => {
   const roadmapArr = [
     {
-      title: "Q1 2022",
+      title: "Q2 2023",
       done: true,
       content: [
         {
@@ -30,7 +30,7 @@ const Roadmap = () => {
       ],
     },
     {
-      title: "Q1 2022",
+      title: "Q3 2023",
       done: false,
       content: [
         {
@@ -51,7 +51,7 @@ const Roadmap = () => {
       ],
     },
     {
-      title: "Q1 2022",
+      title: "Q4 2023",
       done: false,
       content: [
         {
@@ -67,7 +67,7 @@ const Roadmap = () => {
       ],
     },
     {
-      title: "Q1 2022",
+      title: "Q1 2024",
       done: false,
       content: [
         {

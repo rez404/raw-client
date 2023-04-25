@@ -8,6 +8,7 @@ import Head from "next/head";
 import EcosystemSection from "@/components/EcosystemSection";
 import EcosystemSectionTwo from "@/components/EcosystemSectionTwo";
 import EcosystemThree from "@/components/EcosystemThree";
+import EcosystemFour from "@/components/EcosystemSectionFour";
 import Roadmap from "@/components/Roadmap";
 import Divider from "@/components/Divider";
 import EcosystemHead from "@/components/EcosystemHead";
@@ -54,6 +55,7 @@ export default function Home() {
       <EcosystemSection />
       <EcosystemSectionTwo />
       <EcosystemThree />
+      <EcosystemFour />
       <Divider />
       <Roadmap />
       <Divider />
