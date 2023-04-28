@@ -50,23 +50,13 @@ const Footer = () => {
       title: "About",
       links: [
         {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          title: "Staking",
+          desc: "Staking is a process of holding funds in a cryptocurrency wallet to support the operations of a blockchain network. ",
           href: "/",
         },
         {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-          href: "/",
-        },
-        {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-          href: "/",
-        },
-        {
-          title: "About Us",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          title: "Tokenomics",
+          desc: "Tokenomics is the study of how cryptocurrencies work within the broader ecosystem. ",
           href: "/",
         },
       ],

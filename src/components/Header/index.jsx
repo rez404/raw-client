@@ -23,13 +23,34 @@ import logo from "@/images/rawblock.svg";
 import { Link as AnimationLink, animateScroll as scroll } from "react-scroll";
 
 import { Button, MenuItem, Select } from "@saas-ui/react";
-import { FaMoon, FaSun, FaTelegram } from "react-icons/fa";
+import { FaDiscord, FaGithub, FaMoon, FaSun, FaTelegram } from "react-icons/fa";
 import Link from "next/link";
-import { IoMenuOutline } from "react-icons/io5";
+import { IoMailOutline, IoMenuOutline } from "react-icons/io5";
 
 const Header = () => {
   const headerRef = useRef(null);
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
+  const socialContent = [
+    {
+      label: "Telegram",
+      value: "Telegram",
+      href: "https://t.me/rawblockyazilim",
+      icon: FaTelegram,
+    },
+    {
+      label: "Github",
+      value: "Github",
+      href: "",
+      icon: FaGithub,
+    },
+    {
+      label: "Discord",
+      value: "Discord",
+      href: "",
+      icon: FaDiscord,
+    },
+  ];
+
   const menuContent = [
     {
       label: "About",
@@ -102,20 +123,43 @@ const Header = () => {
                 smooth
                 style={{ cursor: "pointer" }}
               >
-                <Text fontWeight={500}> {ii + 1 + ". " + item.value}</Text>
+                <Text fontWeight={500}> {item.value}</Text>
               </AnimationLink>
             ))}
           </Flex>
         )}
         <Flex marginX={"4"} alignItems={"center"} gap={"2"}>
           <Button>Whitepaper</Button>{" "}
-          <Button
-            leftIcon={<Icon as={FaTelegram} />}
-            variant={"solid"}
-            colorScheme="primary"
-          >
-            Community
-          </Button>
+          <Popover isLazy>
+            <PopoverTrigger>
+              <Button variant={"solid"} colorScheme="primary">
+                <Text>Community</Text>
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent
+              bg={"blackAlpha.800"}
+              border={"1px solid"}
+              borderColor={"whiteAlpha.300"}
+              maxWidth="200px"
+            >
+              <PopoverHeader fontWeight="semibold">
+                Our Social Links
+              </PopoverHeader>
+              <PopoverArrow />
+              <PopoverCloseButton />
+              <PopoverBody>
+                <VStack alignItems={"left"}>
+                  {socialContent.map((item) => (
+                    <>
+                      <Button leftIcon={<Icon as={item.icon} />}>
+                        {item.label}
+                      </Button>
+                    </>
+                  ))}{" "}
+                </VStack>
+              </PopoverBody>
+            </PopoverContent>
+          </Popover>
           {/* <IconButton
             onClick={toggleColorMode}
             aria-label="Search database"
@@ -138,7 +182,14 @@ const Header = () => {
                 <PopoverBody>
                   <VStack alignItems={"left"}>
                     {menuContent.map((item) => (
-                      <Text key={item.label}>ASDAS</Text>
+                      <AnimationLink
+                        to={item.href}
+                        key={item.label}
+                        smooth
+                        style={{ cursor: "pointer" }}
+                      >
+                        <Text fontWeight={500}> {item.value}</Text>
+                      </AnimationLink>
                     ))}{" "}
                   </VStack>
                 </PopoverBody>

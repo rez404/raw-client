@@ -1,13 +1,22 @@
 import React from "react";
-import { Box, Flex, Text, Image, HStack, Button, Icon } from "@chakra-ui/react";
-import teamOne from "@/images/team/enver-bg.jpg";
-import teamTwo from "@/images/team/gokhan-bg.jpg";
-import teamThree from "@/images/team/engincan-bg.jpg";
-import teamFour from "@/images/team/zafer-bg.jpg";
-import teamFive from "@/images/team/osman.jpg";
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  HStack,
+  Button,
+  Icon,
+  IconButton,
+} from "@chakra-ui/react";
+import teamOne from "@/images/team/enver-wb.jpg";
+import teamTwo from "@/images/team/gokhan-wb.jpg";
+import teamThree from "@/images/team/engincan-wb.jpg";
+import teamFour from "@/images/team/zafer-wb.jpg";
+import teamFive from "@/images/team/osman-wb.jpg";
 import GradientHeading from "../Headings/GradientHeading";
 import { IoMailOutline } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const TeamSection = () => {
@@ -85,12 +94,12 @@ const TeamSection = () => {
             <Text color="gray.500">{member.role}</Text>
             <Flex justifyContent={"center"}>
               <HStack align={"center"}>
-                <Button size={"lg"} leftIcon={<Icon as={FaLinkedin} />}>
-                  <Link href={member.linkedin} target="_blank">
-                    {" "}
-                    <Text>{"@" + member.username}</Text>
-                  </Link>
-                </Button>
+                <Link href={member.linkedin} target="_blank">
+                  <IconButton
+                    target="_blank"
+                    icon={<Icon p={1} as={FaLinkedin} fontSize={"2xl"} />}
+                  ></IconButton>
+                </Link>
               </HStack>
             </Flex>
           </Box>
