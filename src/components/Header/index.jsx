@@ -129,7 +129,9 @@ const Header = () => {
           </Flex>
         )}
         <Flex marginX={"4"} alignItems={"center"} gap={"2"}>
-          <Button>Whitepaper</Button>{" "}
+          <Link href={"https://whitepaper.rawblock.io/"}>
+            <Button>Whitepaper</Button>{" "}
+          </Link>{" "}
           <Popover isLazy>
             <PopoverTrigger>
               <Button variant={"solid"} colorScheme="primary">

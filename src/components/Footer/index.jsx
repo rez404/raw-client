@@ -27,7 +27,7 @@ const Footer = () => {
         {
           title: "Whitepaper",
           desc: "Whitepaper is a document that describes the technology behind a project. ",
-          href: "/",
+          href: "https://whitepaper.rawblock.io/",
         },
         {
           title: "E-Commerce",
