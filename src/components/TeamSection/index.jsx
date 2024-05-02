@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import teamOne from "@/images/team/enver-wb.jpg";
 import teamTwo from "@/images/team/gokhan-wb.jpg";
-import teamThree from "@/images/team/engincan-wb.jpg";
+import teamThree from "@/images/team/nedim_hoca.webp";
 import teamFour from "@/images/team/zafer-wb.jpg";
 import teamFive from "@/images/team/osman-wb.jpg";
 import GradientHeading from "../Headings/GradientHeading";
@@ -36,11 +36,11 @@ const TeamSection = () => {
       linkedin: "https://www.linkedin.com/in/gokhanyener/",
     },
     {
-      name: "Engincan Kaya",
-      role: "Head of Blockchain",
+      name: "Nedim Aktan Yalçın",
+      role: "Power Systems & Machine Learning",
       image: teamThree.src,
-      username: "engincan-kaya-b626611a9",
-      linkedin: "https://www.linkedin.com/in/engincan-kaya-b626611a9/",
+      username: "nedim-aktan-yalçın",
+      linkedin: "https://www.linkedin.com/in/nedim-aktan-yal%C3%A7%C4%B1n/",
     },
     {
       name: "Zafer Beyiz",
